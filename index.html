@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -37,8 +38,8 @@ header{
     top:0;
     background:rgba(15,23,42,.95);
     backdrop-filter:blur(10px);
-    z-index:100;
     border-bottom:1px solid #1e293b;
+    z-index:100;
 }
 
 nav{
@@ -70,11 +71,14 @@ nav a{
     min-height:90vh;
     display:flex;
     align-items:center;
+    justify-content:center;
     text-align:center;
+    position:relative;
 }
 
 .hero-content{
     width:100%;
+    max-width:900px;
 }
 
 .hero h1{
@@ -89,10 +93,10 @@ nav a{
 }
 
 .hero p{
-    max-width:800px;
-    margin:auto;
     font-size:1.15rem;
     color:#cbd5e1;
+    max-width:800px;
+    margin:auto;
 }
 
 .btn{
@@ -115,14 +119,29 @@ nav a{
     margin-left:15px;
 }
 
+.toptal-corner{
+    position:absolute;
+    top:30px;
+    right:30px;
+    z-index:10;
+    transform:scale(0.85);
+    transform-origin:top right;
+}
+
 section{
     padding:80px 0;
 }
 
 .section-title{
     text-align:center;
-    margin-bottom:50px;
     font-size:2.5rem;
+    margin-bottom:50px;
+}
+
+.card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:15px;
 }
 
 .card-grid{
@@ -131,20 +150,20 @@ section{
     gap:25px;
 }
 
-.card{
+.skill-card{
     background:#1e293b;
     padding:25px;
     border-radius:15px;
-    transition:.3s;
+    transition:0.3s;
 }
 
-.card:hover{
+.skill-card:hover{
     transform:translateY(-5px);
 }
 
-.card h3{
-    margin-bottom:15px;
+.skill-card h3{
     color:#38bdf8;
+    margin-bottom:10px;
 }
 
 .timeline{
@@ -161,10 +180,10 @@ section{
 }
 
 .cert-box{
-    text-align:center;
     background:#1e293b;
     padding:30px;
     border-radius:15px;
+    text-align:center;
 }
 
 .contact{
@@ -183,12 +202,6 @@ footer{
     color:#94a3b8;
 }
 
-.badge-wrapper{
-    display:flex;
-    justify-content:center;
-    margin-top:40px;
-}
-
 @media(max-width:768px){
 
 .hero h1{
@@ -197,6 +210,14 @@ footer{
 
 .hero h2{
     font-size:1.3rem;
+}
+
+.toptal-corner{
+    position:relative;
+    top:auto;
+    right:auto;
+    margin:20px auto 40px auto;
+    transform:scale(0.70);
 }
 
 nav{
@@ -209,6 +230,7 @@ nav ul{
     justify-content:center;
 }
 }
+
 </style>
 </head>
 
@@ -216,7 +238,9 @@ nav ul{
 
 <header>
 <div class="container">
+
 <nav>
+
 <div class="logo">Jagdish Wagh</div>
 
 <ul>
@@ -226,38 +250,40 @@ nav ul{
 <li><a href="#certifications">Certifications</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
+
 </nav>
+
 </div>
 </header>
 
 <section class="hero">
+
+<div class="toptal-corner">
+
+<!-- TOPTAL_BADGE_HERE -->
+
+</div>
+
 <div class="container hero-content">
 
 <h1>Jagdish Wagh</h1>
 
-<h2>Senior Data Engineer | Solution Architect</h2>
+<h2>Microsoft Fabric Expert • Solution Architect • Senior Data Engineer</h2>
 
 <p>
-Microsoft Fabric, Azure, Databricks, Snowflake, Power BI, Terraform and Enterprise Data Platforms.
-Building scalable cloud-native analytics solutions with 12+ years of experience in data engineering,
-architecture, automation, and digital transformation.
+Top 3% Toptal-vetted Data Engineer and Solution Architect with 12+ years of experience designing enterprise-scale analytics platforms using Microsoft Fabric, Azure, Databricks, Snowflake, Power BI, and Terraform.
 </p>
 
 <a href="https://www.linkedin.com/in/jagdish-wagh" target="_blank" class="btn btn-primary">
 LinkedIn Profile
 </a>
 
-<a href="#contact" class="btn btn-secondary">
-Contact Me
+<a href="https://www.toptal.com/developers/resume/jagdish-wagh#BD0Vaz" target="_blank" class="btn btn-secondary">
+Hire Me on Toptal
 </a>
 
-<div class="badge-wrapper">
-
-<!-- PASTE YOUR TOPTAL BADGE HERE -->
-
 </div>
 
-</div>
 </section>
 
 <section id="about">
@@ -266,9 +292,11 @@ Contact Me
 <h2 class="section-title">About Me</h2>
 
 <div class="card">
+
 <p>
-Experienced Solution Architect and Senior Data Engineer with more than 12 years of experience designing enterprise-scale data platforms and analytics solutions. Specialized in Microsoft Fabric, Azure Databricks, Data Warehousing, Power BI, CI/CD automation, and cloud modernization initiatives.
+Experienced Solution Architect and Senior Data Engineer specializing in Microsoft Fabric, Azure Databricks, Power BI, Data Warehousing, Terraform, CI/CD automation, and cloud modernization initiatives.
 </p>
+
 </div>
 
 </div>
@@ -281,34 +309,34 @@ Experienced Solution Architect and Senior Data Engineer with more than 12 years 
 
 <div class="card-grid">
 
-<div class="card">
+<div class="skill-card">
 <h3>Microsoft Fabric</h3>
-<p>Lakehouse, Warehouse, Data Factory, Semantic Models, Power BI</p>
+<p>Lakehouse, Warehouse, Data Factory, Power BI, Semantic Models</p>
 </div>
 
-<div class="card">
+<div class="skill-card">
 <h3>Azure Cloud</h3>
-<p>ADF, Azure SQL, Storage, Key Vault, DevOps, Security</p>
+<p>ADF, Azure SQL, Storage, Key Vault, DevOps</p>
 </div>
 
-<div class="card">
+<div class="skill-card">
 <h3>Databricks</h3>
-<p>PySpark, Delta Lake, Notebooks, Workflow Automation</p>
+<p>PySpark, Delta Lake, Notebooks, Workflows</p>
 </div>
 
-<div class="card">
+<div class="skill-card">
 <h3>Infrastructure as Code</h3>
-<p>Terraform, CI/CD Pipelines, GitHub Actions, Azure DevOps</p>
+<p>Terraform, GitHub Actions, Azure DevOps</p>
 </div>
 
-<div class="card">
+<div class="skill-card">
 <h3>Data Engineering</h3>
-<p>ETL/ELT, Data Modeling, Medallion Architecture</p>
+<p>ETL, ELT, Data Modeling, Medallion Architecture</p>
 </div>
 
-<div class="card">
+<div class="skill-card">
 <h3>Business Intelligence</h3>
-<p>Power BI, Semantic Models, Analytics & Reporting</p>
+<p>Power BI, Analytics, Reporting, Semantic Models</p>
 </div>
 
 </div>
@@ -326,25 +354,19 @@ Experienced Solution Architect and Senior Data Engineer with more than 12 years 
 <div class="timeline-item">
 <h3>Medi GmbH | Senior Data Engineer</h3>
 <p>2020 – Present</p>
-<p>
-Leading Microsoft Fabric architecture, migration programs, CI/CD automation, Lakehouse implementations, enterprise analytics, and cloud modernization initiatives.
-</p>
+<p>Leading Microsoft Fabric architecture, migration initiatives, automation frameworks and enterprise analytics platforms.</p>
 </div>
 
 <div class="timeline-item">
 <h3>Tieto Software | Senior Software Engineer</h3>
 <p>2016 – 2020</p>
-<p>
-Delivered Azure Data Factory, Databricks, Snowflake, and enterprise ETL solutions for global customers.
-</p>
+<p>Delivered Azure Data Factory, Databricks, Snowflake and enterprise ETL solutions.</p>
 </div>
 
 <div class="timeline-item">
 <h3>Mannara Technologies</h3>
 <p>2014 – 2016</p>
-<p>
-Informatica PowerCenter development, migration projects, and enterprise data integration.
-</p>
+<p>Informatica PowerCenter development and enterprise data integration projects.</p>
 </div>
 
 </div>
@@ -358,9 +380,11 @@ Informatica PowerCenter development, migration projects, and enterprise data int
 <h2 class="section-title">Certifications</h2>
 
 <div class="cert-box">
+
 <h3>DP-600 Microsoft Certified: Fabric Analytics Engineer</h3>
 <br>
 <h3>Microsoft Certified: Azure Fundamentals</h3>
+
 </div>
 
 </div>
@@ -372,7 +396,6 @@ Informatica PowerCenter development, migration projects, and enterprise data int
 <h2 class="section-title">Let's Connect</h2>
 
 <p>Email: jagdishmwagh@gmail.com</p>
-
 <br>
 
 <p>
